@@ -15,7 +15,7 @@ import { AgregarpersoComponent } from './agregarperso/agregarperso.component';
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule //para los formularios 
   ],
   exports:[
     MainPageComponent

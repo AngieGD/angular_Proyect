@@ -3,11 +3,6 @@ import { personaje } from '../Interfaces/dgz.interfaces';
 
 
 
-
-
-
-
-
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html'
@@ -28,7 +23,16 @@ export class MainPageComponent  {
 
   ];
 
+  nuevo:personaje ={
+    nombre: "Maestro Roshi",
+    poder: 20000
+  }
 
+  
+
+  agregarNuevoPersonaje( argumento:personaje) {
+    this.personajes.push( argumento );
+  }
 
 
 
