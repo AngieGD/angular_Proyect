@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { MainPageComponent } from './main-page/main-page.component';
 import { PersonajesComponent } from './personajes/personajes.component';
 import { AgregarpersoComponent } from './agregarperso/agregarperso.component';
+import { DbzService } from './services/dbz.service';
 
 
 @NgModule({
@@ -19,6 +20,10 @@ import { AgregarpersoComponent } from './agregarperso/agregarperso.component';
   ],
   exports:[
     MainPageComponent
+  ],
+  providers: [
+    DbzService
+
   ]
 
 })
